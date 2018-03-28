@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WorkshopAndroid</string>
+    <string name="xdk">XDK</string>
+    <string name="temperature">Temperature</string>
+    <string name="Accelerometer">Accelerometer</string>
+    <string name="format_accelerometer">x: %1$s\ny: %2$s\nz: %3$s</string>
+</resources>
