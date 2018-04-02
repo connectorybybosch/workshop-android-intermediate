@@ -9,6 +9,7 @@ import javax.inject.Singleton
 
 @Module
 class AppModule(private val workshopApp: WorkshopApp) {
+
     @Provides
     fun providesContext() = workshopApp
 

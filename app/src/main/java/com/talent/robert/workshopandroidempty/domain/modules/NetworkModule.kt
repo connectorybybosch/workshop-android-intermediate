@@ -18,6 +18,7 @@ import javax.inject.Singleton
 
 @Module
 class NetworkModule (private val httpUrl: HttpUrl) {
+
     @Singleton
     @Provides
     fun provideGson() = Gson()

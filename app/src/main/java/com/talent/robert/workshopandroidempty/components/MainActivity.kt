@@ -3,6 +3,8 @@ package com.talent.robert.workshopandroidempty.components
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.util.Log
+import android.widget.Toast
 import com.talent.robert.workshopandroidempty.R
 import com.talent.robert.workshopandroidempty.components.main.XdkAdapter
 import com.talent.robert.workshopandroidempty.domain.models.XdkData
@@ -36,5 +38,10 @@ class MainActivity : AppCompatActivity() {
 
         val adapter = this.recycler_view.adapter as XdkAdapter
         adapter.addItems(list)
+    }
+
+    private fun handleError(error: Throwable) {
+        Log.e("Error", error.localizedMessage)
+        Toast.makeText(this, error.localizedMessage, Toast.LENGTH_LONG).show()
     }
 }
